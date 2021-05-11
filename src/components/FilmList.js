@@ -5,7 +5,7 @@ const FilmList = ({films}) => {
 
     const filmNodes = films.map(film => {
         return(
-            <Film film={film.name} key={film.id}>{film.url}</Film>
+            <Film key={film.id}><a href={film.url}>{film.name}</a></Film>
         );
     });
 
